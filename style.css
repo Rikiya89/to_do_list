@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; /* ブラウザの初期設定のフォントサイズ 10px相当に変更 ※ブラウザの文字サイズ設定を有効にしたまま */
+}
+
+body {
+    background-color: #fafafa;
+    letter-spacing: 0.04em;
+    color: #333;
+}
+
+.container {
+    padding: 5%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.title {
+    font-size: 3.6rem;
+    /* 文字のサイズと同じtext-heightの設定にした */
+    line-height: 1em;
+}
+
+.countView {
+    font-size: 1.6rem;
+}
+
+.count {
+    padding-right: 4px;
+}
+
+.allTask {
+    padding: 0 4px;
+}
+
+.form {
+    display: flex;
+    margin-top: 16px;
+}
+
+.text {
+    flex-grow: 1;
+    margin-right: 10px;
+    border: solid 1px #ccc;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+input[type="text"]:focus {
+    border: solid 1px rgb(123, 80, 240);
+    outline: 0;
+}
+
+.submit {
+    /* border: solid 1px #ccc; */
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(123, 80, 240);
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.4s opacity;
+}
+
+.submit:hover {
+    opacity: 0.6;
+}
+
+.todo {
+    margin-top: 16px;
+    min-height: 30vh;
+    background-color: white;
+    border: solid 1px #ccc;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.todo__list {
+    list-style: none;
+}
+
+.todo__item {
+    padding: 12px;
+    border-bottom: dotted 1px #ccc;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.todo__item:last-of-type {
+    border: none;
+}
+
+.todo__item::before {
+    content: '・';
+    display: block;
+}
+
+.todo__item.done .todo__text {
+    color: rgb(123, 80, 240);
+    text-decoration: line-through;
+}
+
+.todo__item .todo__done {
+    display: block;
+    font-size: 0.8em;
+    color: rgb(123, 80, 240);
+    cursor: pointer;
+    user-select: none;
+    transition: 0.4s opacity;
+}
+
+.todo__item .todo__done:hover {
+    opacity: 0.6;
+}
+
+.allDone {
+    max-width: 240px;
+    background-color: rgb(123, 80, 240);
+    color: white;
+    font-size: 1.4rem;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    margin: 24px auto 0;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.4s opacity;
+}
+
+.allDone:hover {
+    opacity: 0.6;
+}
+
+.reset {
+    max-width: 240px;
+    background-color: rgb(80, 240, 196);
+    color: white;
+    font-size: 1.4rem;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    margin: 24px auto 0;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.4s opacity;
+}
+
+.reset:hover {
+    opacity: 0.6;
+}

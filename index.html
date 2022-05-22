@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="説明文120文字程度">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container" class="container">
+        <header class="header">
+            <h1 class="title">ToDoList</h1>
+            <div class="countView">完了タスク:
+                <span class="count">0</span>/<span class="allTask">0</span>件
+            </div>
+        </header>
+        <form class="form">
+            <input class="text" type="text" placeholder="ここにToDoを入力しましょう">
+            <input class="submit" type="submit" value="リストに追加">
+        </form>
+        <div class="todo">
+            <ul class="todo__list">
+                <!-- ここに追加されます。todo__item -->
+            </ul>
+        </div>
+        <p class="allDone">全てのタスクを完了にする</p>
+        <p class="reset">Todoをリセットする</p>
+    </div><!-- / container -->
+    <script src="js/main.js"></script>
+</body>
+</html>
